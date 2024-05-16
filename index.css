@@ -126,9 +126,9 @@ body {
 
 /*------------------about_modal------------------ */
 .about_modal {
-    max-width: 40%;
+    max-width: 60%;
     background-color: rgb(221, 211, 199, 0.15);
-    min-width: 400px;
+    min-width: 370px;
 }
 
 .about_modal_header {
@@ -178,7 +178,7 @@ body {
 .about_modal_colse {
     background-color: var(--one-color);
     color: #DDD3C7;
-    font-size: 28px;
+    font-size: 2em;
     width: 45%;
     margin-left: auto;
     border: none;
