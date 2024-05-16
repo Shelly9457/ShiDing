@@ -384,7 +384,8 @@ footer {
 
 .robot_container {
     position: fixed;
-    width: 450px;
+    max-width: 450px;
+    min-width: 300px;
     height: 600px;
     border-radius: 20px;
     bottom: 120px;
