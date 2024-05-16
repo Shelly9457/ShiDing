@@ -28,10 +28,10 @@ const app = Vue.createApp({
         },
         question_ans(e) {
             this.inputMessage = e.target.innerHTML
-            this.send_ans()
+            this.send_ans("Enter")
         },
         send_ans(e) {
-            if (e.key == "Enter") {
+            if (e.key == "Enter" || e == "Enter") {
                 if (this.inputMessage) {
                     let mes = this.inputMessage
                     this.robot_message.push({
