@@ -60,6 +60,19 @@
     .information_contianer {
         width: 100%;
     }
+
+    .robot_btn {
+        width: 20px;
+        height: 20px;
+    }
+    .robot_container{
+        right: 10px;
+        bottom: 80px;
+        left: 10px;
+    }
+    .robot_body {
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width:576px) {
