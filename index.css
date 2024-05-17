@@ -320,6 +320,7 @@ footer {
     margin: auto;
     border-bottom: 1px solid #fff;
     position: relative;
+    z-index: 2;
 }
 
 .footer_content {
@@ -350,6 +351,7 @@ footer {
     bottom: 20px;
     right: 20px;
     width: 15%;
+    z-index: -1;
 }
 
 .copyright {
@@ -394,6 +396,7 @@ footer {
     transform-origin: right bottom;
     display: flex;
     flex-direction: column;
+    z-index: 99;
 }
 
 .robot_header {

@@ -10,6 +10,17 @@
 
 }
 
+@media screen and (max-width:1200px) {
+    .footer_content {
+        flex-wrap: wrap;
+    }
+
+    .footer_text,
+    .footer_title {
+        margin: 20px 0;
+    }
+}
+
 @media screen and (max-width:992px) {
     body {
         font-size: 12px;
@@ -32,13 +43,10 @@
     .gogo_title_chine {
         width: 60%;
     }
+
+
 }
 
-@media screen and (max-width:1200px) {
-    .footer_content {
-        flex-wrap: wrap;
-    }
-}
 
 @media screen and (max-width:768px) {
     .section {
