@@ -65,11 +65,7 @@
         width: 20px;
         height: 20px;
     }
-    .robot_container{
-        right: 10px;
-        bottom: 80px;
-        left: 10px;
-    }
+
     .robot_body {
         font-size: 15px;
     }
@@ -112,5 +108,11 @@
 
     .information_content2 {
         order: 1;
+    }
+
+    .robot_container {
+        right: 10px;
+        bottom: 80px;
+        left: 10px;
     }
 }
