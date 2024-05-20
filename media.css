@@ -1,118 +1,69 @@
-@media screen and (max-width:1400px) {
-    body {
-        font-size: 14px;
-    }
-
-    .header_imgbox>img {
-        width: 80%;
-    }
-
-
-}
+@media screen and (max-width:1400px) {}
 
 @media screen and (max-width:1200px) {
-    .footer_content {
-        flex-wrap: wrap;
+    .img-step {
+        width: 100%;
     }
 
-    .footer_text,
-    .footer_title {
-        margin: 20px 0;
-    }
 }
 
 @media screen and (max-width:992px) {
-    body {
-        font-size: 12px;
-    }
-
-    .header {
-        background: linear-gradient(to bottom, var(--one-color) 25%, var(--one-color) 25%);
-        z-index: -1;
-
+    .chi {
+        letter-spacing: 12px;
     }
 
     .header_section {
-        min-height: 100vh;
+        margin-top: 5em;
     }
 
-    .header_imgbox>img {
-        width: 100%;
+    .img img {
+        height: 40vh;
     }
 
-    .gogo_title_chine {
-        width: 60%;
+    .talisman_box {
+        width: 70%;
+    }
+
+    .recitation-content {
+        width: 70%;
     }
 
 
 }
 
-
 @media screen and (max-width:768px) {
-    .section {
-        margin: 1em 0;
+    .chi {
+        letter-spacing: 9px;
     }
 
-    .about_titlebox {
-        width: 100%;
+    .img img {
+        height: 40vh;
     }
 
-    .information_contianer {
-        width: 100%;
+    .talisman_box {
+        width: 90%;
     }
 
-    .robot_btn {
-        width: 20px;
-        height: 20px;
-    }
-
-    .robot_body {
-        font-size: 15px;
+    .recitation-content {
+        width: 80%;
     }
 }
 
 @media screen and (max-width:576px) {
-    body {
-        font-size: 10px;
+    .chi {
+        letter-spacing: 6px;
     }
 
-    .header_imgbox {
-        width: 60%;
-        z-index: -1;
+    .img>div {
+        width: 30%;
     }
 
-    .about_item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    .img img {
+        height: 30vh;
     }
 
-    .about_box {
-        flex-wrap: wrap;
-    }
-
-    .my_btn {
-        margin: 0 10px;
-    }
-
-    .gogo_title_chine,
-    .bus_container {
-        width: 100%;
-    }
-
-
-    .information_content {
-        order: 2;
-    }
-
-    .information_content2 {
-        order: 1;
-    }
-
-    .robot_container {
-        right: 10px;
-        bottom: 80px;
-        left: 10px;
+    .talisman_box,
+    .recitation-content {
+        margin: auto;
     }
 }
