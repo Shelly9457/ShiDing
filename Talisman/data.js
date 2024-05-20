@@ -54,6 +54,7 @@ const Talisman_choose_data = [
 const Type_talisman = [
     {
         title: "生活",
+        href: "life",
         contest: [
             {
                 color: "藍色",
@@ -119,6 +120,7 @@ const Type_talisman = [
     },
     {
         title: "事 業 / 學 業",
+        href: "work",
         contest: [
             {
                 color: "綠色",
@@ -154,6 +156,7 @@ const Type_talisman = [
     },
     {
         title: "人際",
+        href: "fiend",
         contest: [
             {
                 color: "黑色",
@@ -174,6 +177,7 @@ const Type_talisman = [
     },
     {
         title: "愛情",
+        href: "love",
         contest: [
             {
                 color: "紅色",
@@ -194,6 +198,7 @@ const Type_talisman = [
     },
     {
         title: "財 運",
+        href: "money",
         contest: [
             {
                 color: "黃色",
@@ -214,6 +219,7 @@ const Type_talisman = [
     },
     {
         title: "健康",
+        href: "health",
         contest: [
             {
                 color: "藍色",

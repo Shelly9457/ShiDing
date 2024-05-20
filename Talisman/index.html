@@ -67,19 +67,22 @@
         </header>
         <main>
             <div class="container">
-                <div class="type center">
+                <div class="type center section">
                     <p class="title chi">如何選擇平安符？</p>
                     <div class="line"></div>
                     <p class="title">HOW TO CHOOSE A BLESSED TALISMANS</p>
                     <div class="center row">
-                        <div class="col-lg-4 col-sm-6 choose_btnbox center" v-for="item in Talisman_choose_datas">
+                        <a :href="item.herf" class="col-lg-4 col-sm-6 choose_btnbox center"
+                            v-for="item in Talisman_choose_datas">
                             <button class="life center">
-                                <i :class="item.icon"></i>{{item.text}}</button>
-                        </div>
+                                <i :class="item.icon"></i>{{item.text}}
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
-            <section class="section container-fluid p-0 talisman_container" v-for="section in Type_talismans">
+            <section class="section py-5 container-fluid px-0 talisman_container" :id="section.href"
+                v-for="section in Type_talismans">
                 <h2 class="section_title">{{section.title}}</h2>
                 <div class="talisman_box center my-4" v-for="item in section.contest">
                     <div class="talisman_btn me-5" :class="item.class">

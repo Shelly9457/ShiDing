@@ -5,5 +5,5 @@ const Talisman_app = Vue.createApp({
             Talisman_choose_datas: Talisman_choose_data,
             Type_talismans: Type_talisman,
         }
-    }
+    },
 }).mount("#Talisman_app")
