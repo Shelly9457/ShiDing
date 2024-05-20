@@ -28,22 +28,24 @@ const app = Vue.createApp({
         },
         question_ans(e) {
             this.inputMessage = e.target.innerHTML
-            this.send_ans("Enter")
+            this.send_ans()
         },
-        send_ans(e) {
-            if (e.key == "Enter" || e == "Enter") {
-                if (this.inputMessage) {
-                    let mes = this.inputMessage
-                    this.robot_message.push({
-                        message: mes,
-                        root: 'admin'
-                    })
-                    this.updata()
-                    setTimeout(() => {
-                        this.robot_ans()
-                    }, 500);
-                }
+        keybord(e) {
+            if (e.key == "Enter") this.send_ans()
+        },
+        send_ans() {
+            if (this.inputMessage) {
+                let mes = this.inputMessage
+                this.robot_message.push({
+                    message: mes,
+                    root: 'admin'
+                })
+                this.updata()
+                setTimeout(() => {
+                    this.robot_ans()
+                }, 500);
             }
+
         },
         robot_ans() {
             let mes = "您好，歡迎來到集順廟明德宮！更多問題請洽宮廟或來電(02-26633398)!"
