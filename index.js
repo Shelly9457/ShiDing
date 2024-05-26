@@ -1,4 +1,4 @@
-
+// AOS.init();
 const app = Vue.createApp({
     data() {
         return {
@@ -9,6 +9,8 @@ const app = Vue.createApp({
             inputMessage: "",
             robot_message: [
             ],
+            feature: feature_data,
+            aboutsd: aboutsd_data,
         }
     },
     computed: {

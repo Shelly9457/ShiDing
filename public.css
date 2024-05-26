@@ -63,14 +63,14 @@ footer {
 .footer_title {
     color: #fff;
     font-weight: bold;
-    margin: 3em 0;
+    margin: 1em 0;
 }
 
 .footer_text {
     display: flex;
     align-items: center;
     color: var(--two-color);
-    margin: 2em 0;
+    margin: 1em 0;
 }
 
 .footer_text svg {
@@ -234,6 +234,7 @@ footer {
     border: none;
     text-align: center;
 }
+
 /*------------------media------------------*/
 
 @media screen and (max-width:1400px) {
