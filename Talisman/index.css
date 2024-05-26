@@ -58,6 +58,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: updown 2s infinite ease alternate-reverse;
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(-50px);
+    }
 }
 
 .img img {
@@ -75,6 +82,24 @@
     background-color: #ddd3c7;
     width: 80%;
     white-space: nowrap;
+}
+
+.choose_btnbox:hover {
+    animation: shake 1s ease alternate;
+}
+
+@keyframes shake {
+    25% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 button>i {
@@ -226,4 +251,40 @@ button>i {
     width: 80px;
     height: 40px;
     border-radius: 50px;
+}
+
+/* draw */
+.draw_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #0000004e;
+}
+
+.draw_content {
+    background-color: #fff;
+    border-radius: 15px;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 50%;
+    padding: 20px;
+}
+
+.draw_close {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.draw_result {
+    background-color: var(--two-color);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 9px;
 }

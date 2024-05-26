@@ -66,4 +66,7 @@
     .recitation-content {
         margin: auto;
     }
+    .draw_content{
+        width: 100%;
+    }
 }

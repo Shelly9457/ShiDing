@@ -10,9 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="../public.css">
     <link rel="stylesheet" href="media.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/3.4.26/vue.global.js'
         integrity='sha512-hNMgba8fmKQrKyjVJtVTRzg5w4ISyHN+HgxZ1nbLVWP6cQThiiamn/wI5K6C9jmymVguk5ZgNxg2CyJVEsCCxg=='
         crossorigin='anonymous'></script>
@@ -48,7 +50,13 @@
                                 <a class="nav-link links" href="#">平安符</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link links" href="#">關於石碇</a>
+                                <a class="nav-link links" href="../about/about.html">關於石碇</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link links" href="#import">重要慶典</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link links" href="#class">誦經班</a>
                             </li>
                         </ul>
                     </div>
@@ -59,7 +67,7 @@
                 <div class="line"></div>
                 <p class="title">TYPES OF BLESSED TALISMANS</p>
                 <div class="img row">
-                    <div class="col-sm-2" v-for="item in Talisman_datas">
+                    <div class="col-sm-2" v-for="item,index in Talisman_datas" :style="animation_delay(index)">
                         <img :src="item.img" alt="">
                     </div>
                 </div>
@@ -73,12 +81,21 @@
                     <p class="title">HOW TO CHOOSE A BLESSED TALISMANS</p>
                     <div class="center row">
                         <a :href="item.herf" class="col-lg-4 col-sm-6 choose_btnbox center"
-                            v-for="item in Talisman_choose_datas">
+                            v-for="item in Talisman_choose_datas" @click="draw_lot(item.text)">
                             <button class="life center">
                                 <i :class="item.icon"></i>{{item.text}}
                             </button>
                         </a>
                     </div>
+                </div>
+            </div>
+            <div class="draw_container" v-show="draw_show">
+                <div class="draw_content">
+                    <div class="draw_close btn-close mb-3" @click="draw_show = false"></div>
+                    <h2 class="text-center">你的{{draw_lot_title}}運勢是</h2>
+                    <h1 class="text-center mt-5 draw_result">{{result}}</h1>
+                    <h2 class="text-center mt-5">到廟方祈求平安符讓你的運勢更加穩定或更好!</h2>
+
                 </div>
             </div>
             <section class="section py-5 container-fluid px-0 talisman_container" :id="section.href"

@@ -156,7 +156,7 @@ const Type_talisman = [
     },
     {
         title: "人際",
-        href: "fiend",
+        href: "friend",
         contest: [
             {
                 color: "黑色",
